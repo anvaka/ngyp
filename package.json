@@ -1,0 +1,21 @@
+{
+  "name": "ngyp",
+  "version": "1.0.0",
+  "description": "plain gyp distribution on npm",
+  "main": "index.js",
+  "bin": {
+    "ngyp": "./bin/ngyp.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrei Kashcha",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anvaka/ngyp"
+  },
+  "dependencies": {
+    "path-array": "^1.0.1"
+  }
+}
