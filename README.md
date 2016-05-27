@@ -2,7 +2,7 @@
 
 Plain gyp distribution on npm. This project does not alter [original gyp](https://chromium.googlesource.com/external/gyp)
 in any way. The main purpose of this repository is to allow developers
-install and play with gyp quickly.
+to install and play with gyp quickly.
 
 # usage
 
@@ -43,10 +43,10 @@ file for this C++ code:
 {
   "targets": [
     {
-      "target_name": 'hello-world',
+      "target_name": "hello-world",
       "type": "executable",
       "sources": [
-        'main.cc'
+        "main.cc"
       ]
     }
   ]
@@ -59,12 +59,10 @@ To generate a make file that compiles this project:
 ngyp main.gyp --depth=. -f make --generator-output=build
 ```
 
-This will create a `build`, where we can run `make` and get our code compiled:
+This will create a `build` folder, where we can run `make` and get our code compiled:
 
 ```
-> cd build
-
-> make
+> cd build && make
   CXX(target) out/Default/obj.target/hello-world/main.o
   LINK(target) out/Default/hello-world
 
